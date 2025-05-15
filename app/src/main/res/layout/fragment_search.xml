@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.mainfragments.SearchFragment">
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            style="@style/ShapeAbleImageView"
+            android:padding="20dp"
+            app:strokeWidth="0dp"
+            android:background="@drawable/bg_ripple"
+            android:clickable="true"
+            app:contentPadding="5dp"
+            android:focusable="true"
+            android:stateListAnimator="@animator/button_statelist_anim"
+            app:shapeAppearanceOverlay="@style/CircleImage"
+            android:src="@drawable/baseline_arrow_forward_ios_24" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="16dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:drawableTint="@color/app_color"
+            android:drawableStart="@drawable/search_icon"
+            android:background="@drawable/search_bg1"
+            android:hint="What are you craving?"
+            android:paddingVertical="14dp"
+            android:paddingStart="16dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+<include layout="@layout/search_layout_recents"/>
+
+</LinearLayout>

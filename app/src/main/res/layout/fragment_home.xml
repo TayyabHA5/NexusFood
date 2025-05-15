@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    tools:context=".fragments.mainfragments.HomeFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:fillViewport="true"
+    tools:ignore="MissingClass">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Top Bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    style="@style/ShapeAbleImageView"
+                    android:src="@drawable/pizza"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/CircleImage" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="start"
+                        style="@style/TextView"
+                        android:text="Deliver to" />
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="start"
+                        android:stateListAnimator="@animator/button_statelist_anim"
+                        android:drawableEnd="@drawable/arrow_down_icon"
+                        style="@style/TextView"
+                        android:text="Time Square"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivNotifications"
+                    style="@style/ShapeAbleImageView"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:pointerIcon="hand"
+                    android:src="@drawable/notification_icon"
+                    android:stateListAnimator="@animator/button_statelist_anim"
+                    app:contentPadding="15dp"
+                    app:shapeAppearanceOverlay="@style/CircleImage" />
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivCartIcon"
+                    style="@style/ShapeAbleImageView"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:pointerIcon="hand"
+                    android:stateListAnimator="@animator/button_statelist_anim"
+                    android:src="@drawable/cart_icon"
+                    app:shapeAppearanceOverlay="@style/CircleImage"
+                    app:contentPadding="15dp" />
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/search_icon"
+                android:background="@drawable/search_bg"
+                android:hint="What are you craving?"
+                android:paddingVertical="14dp"
+                android:paddingStart="16dp"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    style="@style/TextView"
+                    android:text="Special Offers"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    style="@style/TextView"
+                    android:text="See All"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:pointerIcon="hand"
+                    android:stateListAnimator="@animator/button_statelist_anim"
+                    android:textColor="@color/app_color"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Special Offer Card -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            style="@style/ShapeAbleImageView"
+                            android:background="@drawable/bg_ripple"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:stateListAnimator="@animator/button_statelist_anim"
+                            app:shapeAppearanceOverlay="@style/CircleImage"
+                            android:src="@drawable/ic_launcher_foreground"/>
+                        <TextView
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            style="@style/TextView"
+                            android:layout_width="wrap_content"
+                            android:text="Hamburger"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            style="@style/ShapeAbleImageView"
+                            android:background="@drawable/bg_ripple"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:stateListAnimator="@animator/button_statelist_anim"
+                            app:shapeAppearanceOverlay="@style/CircleImage"
+                            android:src="@drawable/ic_launcher_foreground"/>
+                        <TextView
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            style="@style/TextView"
+                            android:layout_width="wrap_content"
+                            android:text="Hamburger"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:stateListAnimator="@animator/button_statelist_anim"
+                            style="@style/ShapeAbleImageView"
+                            app:shapeAppearanceOverlay="@style/CircleImage"
+                            android:src="@drawable/ic_launcher_foreground"/>
+                        <TextView
+                            android:background="@drawable/bg_ripple"
+
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            style="@style/TextView"
+                            android:layout_width="wrap_content"
+                            android:text="Hamburger"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            style="@style/ShapeAbleImageView"
+                            android:background="@drawable/bg_ripple"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:stateListAnimator="@animator/button_statelist_anim"
+                            app:shapeAppearanceOverlay="@style/CircleImage"
+                            android:src="@drawable/ic_launcher_foreground"/>
+                        <TextView
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            style="@style/TextView"
+                            android:layout_width="wrap_content"
+                            android:text="More"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            style="@style/ShapeAbleImageView"
+                            android:background="@drawable/bg_ripple"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:stateListAnimator="@animator/button_statelist_anim"
+                            app:shapeAppearanceOverlay="@style/CircleImage"
+                            android:src="@drawable/ic_launcher_foreground"/>
+                        <TextView
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            style="@style/TextView"
+                            android:layout_width="wrap_content"
+                            android:text="Hamburger"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            style="@style/ShapeAbleImageView"
+                            android:background="@drawable/bg_ripple"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:stateListAnimator="@animator/button_statelist_anim"
+                            app:shapeAppearanceOverlay="@style/CircleImage"
+                            android:src="@drawable/ic_launcher_foreground"/>
+                        <TextView
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            style="@style/TextView"
+                            android:layout_width="wrap_content"
+                            android:text="Hamburger"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            style="@style/ShapeAbleImageView"
+                            android:background="@drawable/bg_ripple"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:stateListAnimator="@animator/button_statelist_anim"
+                            app:shapeAppearanceOverlay="@style/CircleImage"
+                            android:src="@drawable/ic_launcher_foreground"/>
+                        <TextView
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            style="@style/TextView"
+                            android:layout_width="wrap_content"
+                            android:text="Hamburger"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            style="@style/ShapeAbleImageView"
+                            android:background="@drawable/bg_ripple"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:stateListAnimator="@animator/button_statelist_anim"
+                            app:shapeAppearanceOverlay="@style/CircleImage"
+                            android:src="@drawable/ic_launcher_foreground"/>
+                        <TextView
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            style="@style/TextView"
+                            android:layout_width="wrap_content"
+                            android:text="More"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:text="Discount Guaranteed!"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    style="@style/TextView"
+                    android:text="See All"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:pointerIcon="hand"
+                    android:stateListAnimator="@animator/button_statelist_anim"
+                    android:textColor="@color/app_color"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Horizontal Food Cards -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="16dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <include layout="@layout/discount_item_layout"/>
+                    <include layout="@layout/discount_item_layout"/>
+                    <include layout="@layout/discount_item_layout"/>
+                    <include layout="@layout/discount_item_layout"/>
+                    <include layout="@layout/discount_item_layout"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:text="Recommended For You"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    style="@style/TextView"
+                    android:text="See All"
+                    android:textColor="@color/app_color"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <include layout="@layout/recommended_chip_layout"/>
+
+            <include layout="@layout/recommeded_for_you_layout"/>
+            <include layout="@layout/recommeded_for_you_layout"/>
+            <include layout="@layout/recommeded_for_you_layout"/>
+            <include layout="@layout/recommeded_for_you_layout"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>

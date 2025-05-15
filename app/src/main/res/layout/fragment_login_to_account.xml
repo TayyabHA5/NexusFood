@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.LoginToAccountFragment">
+
+    <!-- Top Half -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/btnSkip"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/skip_icon"
+            app:contentPadding="5dp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/food_oeder_anim" />
+
+        <TextView
+            style="@style/TextView"
+            android:text="Let's you in"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Bottom Half -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContinueWithFacebook"
+            style="@style/AccountsButtonStyle"
+            android:layout_marginTop="10dp"
+            android:text="Continue with Facebook"
+            app:icon="@drawable/facebook_icon" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContinueWithGoogle"
+            style="@style/AccountsButtonStyle"
+            android:layout_marginTop="10dp"
+            android:text="Continue with Google     "
+            app:icon="@drawable/google_icon" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContinueWithApple"
+            style="@style/AccountsButtonStyle"
+            android:layout_marginTop="10dp"
+            android:text="Continue with Apple       "
+            app:icon="@drawable/apple_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                android:background="@color/strokeColor" />
+
+            <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:text="or" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                android:background="@color/strokeColor" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSignInWithPhoneNumber"
+            style="@style/MyButtonStyle"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Sign in with Phone Number"
+            android:textAllCaps="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:text="Don't have an account?" />
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textColor="@color/app_color"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

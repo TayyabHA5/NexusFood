@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph.xml"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.tayyabbsse51f22s087re.nexusfood.fragments.mainfragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment2_to_cartFragment3"
+            app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messagesFragment2"
+        android:name="com.tayyabbsse51f22s087re.nexusfood.fragments.mainfragments.MessagesFragment"
+        android:label="fragment_messages"
+        tools:layout="@layout/fragment_messages" />
+    <fragment
+        android:id="@+id/orderFragment2"
+        android:name="com.tayyabbsse51f22s087re.nexusfood.fragments.mainfragments.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" />
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.foodnexus.fragments.mainfragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.tayyabbsse51f22s087re.nexusfood.fragments.mainfragments.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        tools:layout="@layout/fragment_notification"
+        android:name="com.example.foodnexus.fragments.mainfragments.NotificationFragment"
+        android:label="NotificationFragment" >
+        <action
+            android:id="@+id/action_notificationFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+</navigation>

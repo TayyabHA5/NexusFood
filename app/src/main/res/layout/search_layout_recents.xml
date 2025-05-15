@@ -1,0 +1,230 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Searches" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:singleLine="false"
+        style="@style/Widget.Material3.Chip.Suggestion">
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="italian pizza" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Burger king" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Sultan Shwarma" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Vegeterian" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Desert" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Pancake" />
+
+    </com.google.android.material.chip.ChipGroup>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Cuisines" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:singleLine="false"
+        style="@style/Widget.Material3.Chip.Suggestion">
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="italian pizza" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Burger king" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Sultan Shwarma" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Vegeterian" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Desert" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Pancake" />
+
+    </com.google.android.material.chip.ChipGroup>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Popular Cuisines" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:singleLine="false"
+        style="@style/Widget.Material3.Chip.Suggestion">
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="italian pizza" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Burger king" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Sultan Shwarma" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Vegeterian" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Desert" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            android:textColor="@color/app_color"
+            app:chipStrokeColor="@color/app_color"
+            android:text="Pancake" />
+
+    </com.google.android.material.chip.ChipGroup>
+</LinearLayout>

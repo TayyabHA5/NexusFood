@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.SignUpFragment">
+
+    <!-- First Section -->
+    <LinearLayout
+        android:id="@+id/layoutSection0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/linearLayout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/arrow_left_icon"
+            app:contentPadding="10dp" />
+
+        <TextView
+            android:layout_marginTop="80dp"
+            style="@style/TextView"
+            android:text="Create New Account"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/et_create_accountbg"
+            android:hint="+923049589504"
+            android:paddingVertical="15dp"
+            android:textSize="12sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/et_create_accountbg"
+            android:hint="Email"
+            android:paddingVertical="15dp"
+            android:textSize="12sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/et_create_accountbg"
+            android:hint="Full Name"
+            android:paddingVertical="15dp"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:textColor="@color/app_color"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center"
+            android:buttonTint="@color/app_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember me" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginHorizontal="15dp"
+            android:id="@+id/btnSignup"
+            style="@style/MyButtonStyle"
+            android:text="Sign up" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSection1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        style="@style/linearLayout"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                android:background="@color/strokeColor" />
+
+            <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:text="or" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                android:background="@color/strokeColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/linearLayout">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                style="@style/CreateAccountButtonStyle"
+                android:src="@drawable/google_icon"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                style="@style/CreateAccountButtonStyle"
+                android:src="@drawable/facebook_icon"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                style="@style/CreateAccountButtonStyle"
+                android:src="@drawable/apple_icon"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:text="Already have an account?" />
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:text="Sign in"
+                android:textColor="@color/app_color"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

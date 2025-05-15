@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Nexus Food</string>
+    <string name="web_client_id">546720287272-7loe2uq689fs4vnq9b1v6an5sopvukrr.apps.googleusercontent.com</string>
+    <string name="title">Blood Bank</string>
+    <string name="welcome_description">Explore a world full of flavors, recipes, and food discoveries — all in one place. From your cravings to your kitchen, we’ve got you covered.</string>
+    <string name="payment_description">Skip the hassle—pay instantly and securely with just a few taps. Whether you\'re settling bills, shopping online, or sending money to friends, EasyPayment makes it smooth, fast, and stress-free.</string>
+    <string name="fast_delivery_description">Get what you need, when you need it—delivered at lightning speed. With our fast delivery service, your orders arrive in no time, right at your doorstep.</string>
+</resources>

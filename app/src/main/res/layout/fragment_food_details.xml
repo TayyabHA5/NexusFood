@@ -1,0 +1,140 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6F6F6"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="#61922A">
+
+            <FrameLayout
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/foodDetailImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+            <!--  Back Button  -->
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+             />
+            <!--  Share Button  -->
+            <ImageView
+                android:id="@+id/shareButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+             />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/foodDetailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:text="Mixed Vegetable Salad"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <!--  Food Description  -->
+        <TextView
+            android:id="@+id/foodDetailDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:padding="16dp"
+            android:text="This vegetable salad is a healthy and delicious summer salad made with fresh raw veggies, avocado, nuts, seeds, herbs and feta in a light ..."
+            android:textColor="#555555"
+            android:textSize="16sp" />
+        <!--  Quantity Selector  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/decreaseButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="-"
+                android:textColor="#18C720"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/quantityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="1"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/increaseButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="+"
+                android:textColor="#18C720"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <!--  Note to Restaurant  -->
+        <EditText
+            android:id="@+id/noteToRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Note to Restaurant (optional)"
+            android:padding="16dp"
+            android:textColorHint="#999999"
+            android:textSize="16sp" />
+        <!--  Add to Basket Button  -->
+        <Button
+            android:id="@+id/addToBasketButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Add to Basket - $12.00"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

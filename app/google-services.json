@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "546720287272",
+    "project_id": "nexus-food",
+    "storage_bucket": "nexus-food.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546720287272:android:97cd72cacae776c5fd031d",
+        "android_client_info": {
+          "package_name": "com.tayyabbsse51f22s087re.nexusfood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc5bEABuzIRJPs2-XYrtMW8VVqB2ZXlgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

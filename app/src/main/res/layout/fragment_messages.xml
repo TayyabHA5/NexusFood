@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.mainfragments.OrderFragment">
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orders"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            style="@style/ShapeAbleImageView"
+            app:strokeWidth="0dp"
+            android:background="@drawable/bg_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:stateListAnimator="@animator/button_statelist_anim"
+            app:shapeAppearanceOverlay="@style/CircleImage"
+            android:src="@drawable/search_icon"
+            app:contentPadding="12dp"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            style="@style/ShapeAbleImageView"
+            app:strokeWidth="0dp"
+            android:background="@drawable/bg_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:stateListAnimator="@animator/button_statelist_anim"
+            app:shapeAppearanceOverlay="@style/CircleImage"
+            android:src="@drawable/chat_dot_icon"
+            app:contentPadding="12dp"/>
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+
+        android:layout_marginHorizontal="15dp"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/app_color"
+        app:tabGravity="fill"
+        app:tabIconTint="@color/black">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empty"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You don't any have messages and calls"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

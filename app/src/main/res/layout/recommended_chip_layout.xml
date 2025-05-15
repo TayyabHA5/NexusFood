@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginHorizontal="15dp"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:singleLine="true"
+        style="@style/Widget.Material3.Chip.Assist">
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipBackgroundColor="@color/app_color"
+            app:chipIcon="@drawable/google_icon"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            app:chipStrokeColor="@color/app_color"
+            android:textColor="@color/white"
+            android:text="All" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/google_icon"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            app:chipStrokeColor="@color/app_color"
+            android:textColor="@color/app_color"
+            android:text="Hamburger" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/google_icon"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            app:chipStrokeColor="@color/app_color"
+            android:textColor="@color/app_color"
+            android:text="Pizza" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/google_icon"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            app:chipStrokeColor="@color/app_color"
+            android:textColor="@color/app_color"
+            android:text="Noodles" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/google_icon"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            app:chipStrokeColor="@color/app_color"
+            android:textColor="@color/app_color"
+            android:text="Meat" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/google_icon"
+            app:chipCornerRadius="15dp"
+            app:chipStrokeWidth="2dp"
+            app:chipStrokeColor="@color/app_color"
+            android:textColor="@color/app_color"
+            android:text="All" />
+
+    </com.google.android.material.chip.ChipGroup>
+</HorizontalScrollView>

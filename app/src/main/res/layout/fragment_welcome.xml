@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.WelcomeFragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pizza"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:layout_marginHorizontal="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/app_color"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to FoodNexus!"/>
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_description"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_gravity="end"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textColor="@color/app_color"/>
+</FrameLayout>

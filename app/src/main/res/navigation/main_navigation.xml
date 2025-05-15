@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.tayyabbsse51f22s087re.nexusfood.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+
+        <action
+            android:id="@+id/action_splashFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_loginToAccountFragment2"
+            app:destination="@id/loginToAccountFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.tayyabbsse51f22s087re.nexusfood.fragments.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_orderForFoodFragment"
+            app:destination="@id/orderForFoodFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderForFoodFragment"
+        android:name="com.tayyabbsse51f22s087re.nexusfood.fragments.OrderForFoodFragment"
+        android:label="fragment_order_for_food"
+        tools:layout="@layout/fragment_order_for_food" >
+        <action
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit"
+            android:id="@+id/action_orderForFoodFragment_to_easyPaymentFragment"
+            app:destination="@id/easyPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/easyPaymentFragment"
+        android:name="com.tayyabbsse51f22s087re.nexusfood.fragments.EasyPaymentFragment"
+        android:label="fragment_order_for_food"
+        tools:layout="@layout/fragment_order_for_food" >
+        <action
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit"
+            android:id="@+id/action_easyPaymentFragment_to_fastDeliveryFragment"
+            app:destination="@id/fastDeliveryFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_fast_delivery"
+        android:id="@+id/fastDeliveryFragment"
+        android:name="com.tayyabbsse51f22s087re.nexusfood.fragments.FastDeliveryFragment"
+        android:label="FastDeliveryFragment" >
+        <action
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit"
+            android:id="@+id/action_fastDeliveryFragment_to_loginToAccountFragment"
+            app:destination="@id/loginToAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginToAccountFragment"
+        android:name="com.tayyabbsse51f22s087re.nexusfood.fragments.LoginToAccountFragment"
+        android:label="fragment_login_to_account"
+        tools:layout="@layout/fragment_login_to_account" >
+        <action
+            android:id="@+id/action_loginToAccountFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginToAccountFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_loginToAccountFragment_to_profileFillFragment"
+            app:destination="@id/profileFillFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.tayyabbsse51f22s087re.nexusfood.fragments.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.tayyabbsse51f22s087re.nexusfood.fragments.mainfragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/profileFillFragment"
+        android:name="com.tayyabbsse51f22s087re.nexusfood.fragments.ProfileFillFragment"
+        android:label="fragment_profile_fill"
+        tools:layout="@layout/fragment_profile_fill" >
+        <action
+            android:id="@+id/action_profileFillFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+</navigation>
